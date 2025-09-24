@@ -1,29 +1,40 @@
-
 <!doctype html>
 <html lang="fi">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Viikko 1 – Lomake</title>
+  <title>Viikko 1 | Lomake</title>
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <header>
-    <h1><!-- TODO: Lomake-sivun H1 --></h1>
-    <nav aria-label="Päävalikko">
-      <!-- TODO: Sama navigaatio kuin muilla sivuilla -->
-    </nav>
-  </header>
-  <main>
-    <!-- TODO: Luo <form>:
-         - lisää label for + id parit
-         - järkevät type-arvot (email, number, tms.)
-         - method ja action attribuutit
-         - submit-painike
-    -->
-  </main>
-  <footer>
-    <!-- TODO: Footer -->
-  </footer>
+<header>
+  <h1>Lomake</h1>
+  <nav aria-label="Päävalikko">
+    <a href="./index.html">Etusivu</a>
+    <a href="./table.html">Taulukko</a>
+    <a href="./form.html">Lomake</a>
+    <a href="./image.html">Kuva</a>
+  </nav>
+</header>
+<main>
+  <form method="post" action="#">
+    <div>
+      <label for="name">Nimi</label>
+      <input id="name" name="name" type="text" required />
+    </div>
+    <div>
+      <label for="email">Sähköposti</label>
+      <input id="email" name="email" type="email" required />
+    </div>
+    <div>
+      <label for="age">Ikä</label>
+      <input id="age" name="age" type="number" min="0" />
+    </div>
+    <button type="submit">Lähetä</button>
+  </form>
+</main>
+<footer>
+  <p>&copy; 2025</p>
+</footer>
 </body>
 </html>

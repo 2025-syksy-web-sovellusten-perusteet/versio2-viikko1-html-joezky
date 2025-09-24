@@ -4,21 +4,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Viikko 1 – Taulukko</title>
+  <title>Viikko 1 | Taulukko</title>
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <header>
-    <h1><!-- TODO: Taulukko-sivun H1 --></h1>
-    <nav aria-label="Päävalikko">
-      <!-- TODO: Sama navigaatio kuin muilla sivuilla -->
-    </nav>
-  </header>
-  <main>
-    <!-- TODO: Lisää datataulukko, jossa on caption + thead/tbody -->
-  </main>
-  <footer>
-    <!-- TODO: Footer -->
-  </footer>
+<header>
+  <h1>Taulukko</h1>
+  <nav aria-label="Päävalikko">
+    <a href="./index.html">Etusivu</a>
+    <a href="./table.html">Taulukko</a>
+    <a href="./form.html">Lomake</a>
+    <a href="./image.html">Kuva</a>
+  </nav>
+</header>
+<main>
+  <table>
+    <caption>Viikon opiskelutunnit</caption>
+    <thead>
+      <tr>
+        <th>Päivä</th>
+        <th>Tunnit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Ma</td><td>3</td></tr>
+      <tr><td>Ti</td><td>4</td></tr>
+    </tbody>
+  </table>
+</main>
+<footer>
+  <p>&copy; 2025</p>
+</footer>
 </body>
 </html>
